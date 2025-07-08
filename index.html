@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Metadatos -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Elvis Marquez" />
+    <meta
+      name="description"
+      content="Portafolio profesional de Elvis Marquez, desarrollador web full stack con proyectos, certificaciones y contacto."
+    />
+    <meta name="keywords" content="HTML, CSS, JavaScript, React" />
+    <!-- Fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      integrity="sha512-H1+8CvbbMB2HRsQ9..."
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- CSS  -->
+    <link rel="stylesheet" href="./styles.css" />
+    <!-- bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <!-- titulo -->
+    <title>Elvis Marquez | Desarrollador Web Full-Stack</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/images/icono.png" />
+  </head>
+  <body>
+    <!-- barra de navegación -->
+    <header>
+      <nav class="navbar navbar-expand-md bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html">
+            <img
+              src="./assets/images/icono.png"
+              alt="Logo"
+              width="30"
+              height="30"
+              class="d-inline-block align-text-top"
+            />
+            Elvis Marquez</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbar-toggler"
+            aria-controls="navbar-toggler"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbar-toggler">
+            <ul
+              class="navbar-nav d-flex justify-content-center align-content-center"
+            >
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="./index.html"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contacto.html">Contacto</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Carrera
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="./estudios.html"
+                      >Estudios y Certificaciones</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./proyectos.html"
+                      >Proyectos</a
+                    >
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="./sobre-mi.html">Sobre mí</a>
+                  </li>
+                </ul>
+                <!-- </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              </li> -->
+              </li>
+            </ul>
+
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Certificaciones..."
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Buscar
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- estudios -->
+    <div class="contenedor-principal">
+      <aside class="barra-lateral">
+        <h2>Estudios y Certificaciones</h2>
+        <nav>
+          <ul class="lista-estudios">
+            <li>
+              <a href="./estudios.html#desarrollo"
+                >Desarrollo Web en Coder House</a
+              >
+            </li>
+            <li>
+              <a href="./estudios.html#java">Java Script en Coder House</a>
+            </li>
+            <li><a href="./estudios.html#react">React Js en Coder House</a></li>
+            <li>
+              <a href="./estudios.html#backend"
+                >Backend I,II y III: Desarrollo Avanzado de Backend</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </aside>
+    </div>
+    <!-- pie de pagina -->
+    <footer class="pie-de-pagina">
+      <h4>
+        <span class="negrita">Sígueme</span> en mis redes para conocerme mejor
+      </h4>
+      <ul class="redes-sociales">
+        <li><a href="https://cl.linkedin.com/" target="_blank">linkedin</a></li>
+        <li>
+          <a href="https://www.instagram.com/" target="_blank">instagram</a>
+        </li>
+        <li>
+          <a href="https://web.facebook.com/?_rdc=1&_rdr" target="_blank"
+            >facebook</a
+          >
+        </li>
+        <li><a href="https://x.com/?lang=es" target="_blank">X</a></li>
+      </ul>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
