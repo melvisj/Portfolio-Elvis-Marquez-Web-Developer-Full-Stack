@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 /* barra de navegacion */
 .navbar-collapse {
   justify-content: end;
@@ -33,4 +34,12 @@
   height: 200px;
   border-radius: 50%;
   padding: 1rem;
+}
+
+/* queries */
+
+@media screen and (min-width: 700px) {
+  .hero .hero-inferior .hero-image-dos {
+    max-width: 600px;
+  }
 }
