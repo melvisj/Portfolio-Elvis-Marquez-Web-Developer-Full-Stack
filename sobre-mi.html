@@ -45,6 +45,10 @@
       integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
     <!-- titulo -->
     <title>Elvis Marquez | Desarrollador Web Full-Stack</title>
     <!-- Favicon -->
@@ -89,7 +93,9 @@
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./contacto.html">Contacto</a>
+                <a class="nav-link" href="mailto:correo@dementirita.com"
+                  >Contacto</a
+                >
               </li>
               <li class="nav-item dropdown">
                 <a
@@ -198,61 +204,131 @@
           </p>
         </div>
       </section>
-      <!-- Objetivos profesionales  -->
-      <section>
-        <h2>Mi Objetivo Profesional</h2>
-        <p>
-          Mi meta es ayudar a emprendedores, profesionales y pequeñas empresas a
-          tener presencia en internet mediante sitios web funcionales, claros y
-          pensados para crecer.
-        </p>
-        <p>
-          Me especializo en soluciones sencillas pero efectivas, priorizando el
-          tiempo de carga, claridad del contenido y facilidad de contacto.
-        </p>
-        <p>
-          No importa en que parte te encuentres, tu presupuesto o tus
-          ambiciones, tengo una solución para ti y te ayudaré a cumplir tus
-          objetivos.
-        </p>
-      </section>
-      <!-- Herramientas  -->
-      <section>
-        <h2>Herramientas y Tecnologías</h2>
-        <ul>
-          <li>
-            HTML5 & Semántica Web. <span class="negrita">En formación</span>
-          </li>
-          <li>CSS3. <span class="negrita">En formación</span></li>
-          <li>JavaScript moderno. <span class="negrita">En formación</span></li>
-          <li>React JS.</li>
-          <li>
-            Backend con Node.js. <span class="negrita">En formación</span>
-          </li>
-          <li>
-            Control de versiones con Git y GitHub.
-            <span class="negrita">En formación</span>
-          </li>
-        </ul>
-      </section>
       <!-- Testimonios  -->
-      <section>
-        <h2>Testimonios</h2>
-        <blockquote>
-          "Elvis tiene una forma muy clara de explicar las cosas. Me ayudó a
-          entender cómo funcionaría mi futura tienda online."
-          <footer>— Laura G., emprendedora</footer>
-        </blockquote>
-        <blockquote>
-          "Aunque aún estaba formándose, se notaba que es meticuloso y con
-          muchas ganas de ayudar. Muy recomendable."
-          <footer>— Carlos M., diseñador gráfico</footer>
-        </blockquote>
+      <section class="testimonios seccion-clara">
+        <div class="contenedor-titulo-testimonios">
+          <h2 class="seccion-titulo">Testimonios</h2>
+          <h3 class="seccion-descripcion">
+            Mira como me describen colegas y clientes...
+          </h3>
+        </div>
+        <!-- carousel  -->
+        <div id="testimonios-carrusel" class="carousel slide carousel-dark">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="container">
+                <img
+                  src="assets/images/cliente1.svg"
+                  class="testimonio-imagen rounded-circle"
+                  alt="Cliente Pablo, rubio, ojos azules, camisa rosa, sentado..."
+                />
+                <p class="testimonio-texto">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+                  eget turpis gravida, placerat enim sit amet, iaculis tellus.
+                  Donec porttitor dolor id urna.
+                </p>
+                <div class="testimonio-info">
+                  <p class="cliente">Pablo</p>
+                  <p class="cargo">Gerente de "tuempresaweb"</p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="container">
+                <img
+                  src="assets/images/cliente2.svg"
+                  class="testimonio-imagen rounded-circle"
+                  alt="Cliente Xianging, Asiatica, Cabello oscuro, camisa negra, sentada..."
+                />
+                <p class="testimonio-texto">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+                  eget turpis gravida, placerat enim sit amet, iaculis tellus.
+                  Donec porttitor dolor id urna.
+                </p>
+                <div class="testimonio-info">
+                  <p class="cliente">Xianging</p>
+                  <p class="cargo">CEO de "tuempresaweb"</p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="container">
+                <img
+                  src="assets/images/cliente3.svg"
+                  class="testimonio-imagen rounded-circle"
+                  alt="Cliente Juan, Afroamericano, Camisa roja, sonriendo..."
+                />
+                <p class="testimonio-texto">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+                  eget turpis gravida, placerat enim sit amet, iaculis tellus.
+                  Donec porttitor dolor id urna.
+                </p>
+                <div class="testimonio-info">
+                  <p class="cliente">Juan</p>
+                  <p class="cargo">Product Manager de "tuempresaweb"</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#testimonios-carrusel"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#testimonios-carrusel"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+          </button>
+        </div>
       </section>
-      <p>
-        <em>*Testimonios ficticios para efectos demostrativos </em>
-      </p>
     </main>
+    <footer
+      class="seccion-oscura d-flex flex-column align-items-center justify-content-center text-center"
+    >
+      <div class="footer-logo-container">
+        <img
+          class="footer-logo"
+          src="./assets/images/icono-blanco.svg"
+          alt="Logo del portafolio"
+        />
+      </div>
+      <p class="footer-texto">
+        Aprendo y mejoro cada día. <br />
+        Cuenta conmigo para sacar tu proyecto adelante.
+      </p>
+      <div class="iconos-redes-sociales">
+        <a href="https://x.com/" target="_blank" rel="noreferrer noopener"
+          ><i class="bi bi-twitter-x"></i
+        ></a>
+        <a href="https://github.com/" target="_blank" rel="noreferrer noopener"
+          ><i class="bi bi-github"></i
+        ></a>
+        <a
+          href="https://www.linkedin.com/login/es"
+          target="_blank"
+          rel="noreferrer noopener"
+          ><i class="bi bi-linkedin"></i
+        ></a>
+        <a
+          href="mailto:correo@dementirita.com"
+          target="_blank"
+          rel="noreferrer noopener"
+          ><i class="bi bi-envelope-at-fill"></i
+        ></a>
+      </div>
+      <div class="derechos-de-autor">
+        Creado por Elvis Marquez (2025) &#169;
+      </div>
+    </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
