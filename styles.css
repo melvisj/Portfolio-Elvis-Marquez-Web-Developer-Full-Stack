@@ -26,6 +26,18 @@
   margin-bottom: 1.5rem;
 }
 
+.seccion-clara .accordion-body .seccion-texto {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.accordion-body {
+  display: flex;
+  padding: 20px;
+  color: white;
+  background-color: #1b1b32;
+}
+
 /* barra de navegacion */
 .navbar-collapse {
   justify-content: end;
@@ -58,6 +70,9 @@
   padding: 1rem;
 }
 
+.hero .hero-inferior .hero-image-dos {
+  max-height: 425px !important;
+}
 /* sobre mi  */
 
 .sobre-mi {
@@ -74,6 +89,23 @@
   max-width: 900px;
   text-align: center;
   display: block;
+}
+
+/* estudios acordeon  */
+
+.certificados {
+  width: 100%;
+  max-width: 400px; /* más ancha */
+  height: auto; /* mantiene la proporción natural */
+  aspect-ratio: 3 / 2; /* fuerza un formato rectangular horizontal */
+  margin-left: 8rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.acordeon-estudios {
+  padding: 40px 40px 60px 40px;
+  margin-bottom: 5rem;
 }
 
 /* experiencia  */

@@ -36,8 +36,6 @@
       href="https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap"
       rel="stylesheet"
     />
-    <!-- CSS  -->
-    <link rel="stylesheet" href="./styles.css" />
     <!-- bootstrap -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
@@ -49,6 +47,8 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
     />
+    <!-- CSS  -->
+    <link rel="stylesheet" href="./styles.css" />
     <!-- titulo -->
     <title>Elvis Marquez | Desarrollador Web Full-Stack</title>
     <!-- Favicon -->
@@ -147,94 +147,276 @@
     </header>
     <!-- estudios  -->
     <main class="contenido-estudios">
-      <h2 class="h2-estudios">Mis Certificaciones</h2>
-      <p class="h2-estudio">
-        Estos son los cursos que he completado en Coderhouse. Cada uno
-        representa una etapa importante en mi desarrollo como profesional full
-        stack.
-      </p>
-      <section id="desarrollo">
-        <h2>Desarrollo Web en Coder House</h2>
-        <p>
-          <span class="negrita">Certificación en Desarrollo Web:</span>
-          Formación en HTML, CSS, Box Model, Grids, pseudo clases, Bootstrap,
-          SASS, Git/GitHub, animaciones, SEO, servidores web y principios de
-          KYC.
-        </p>
-        <a
-          href="https://www.coderhouse.com/cl/cursos/desarrollo-web-online?_st=y"
-          target="_blank"
-        >
-          <img
-            class="certificados"
-            src="./assets/images/desarrollo_web.png"
-            alt="certificación en desarrollo web Elvis Marquez"
-          />
-        </a>
+      <!-- presentacion de estudios  -->
+      <section class="sobre-mi seccion-oscura align-items-strech">
+        <div class="contenedor d-flex flex-column">
+          <h2 class="seccion-titulo">Mis Certificaciones</h2>
+          <p class="seccion-texto">
+            Estos son los cursos que he completado en Coderhouse. Cada uno
+            representa una etapa importante en mi desarrollo como profesional en
+            el Desarrollo Web.
+          </p>
+          <p class="seccion-texto">
+            Actualmente sigo creciendo, aprendiendo nuevas tecnologias y
+            perfeccionando las ya adquiridas.
+          </p>
+        </div>
       </section>
-      <section id="java">
-        <h2>Java Script en Coder House</h2>
-        <p>
-          <span class="negrita">Certificación en JavaScript:</span> Formación en
-          control de ciclos, funciones, arrays, objetos, funciones de orden
-          superior, manipulación del DOM y eventos, asincronismo, peticiones,
-          promesas y uso de librerías.
-        </p>
-        <a
-          href="https://www.coderhouse.com/cl/cursos/javascript?_st=y"
-          target="_blank"
-        >
-          <img
-            class="certificados"
-            src="./assets/images/Javascript.png"
-            alt="certificación en javascript"
-          />
-        </a>
+      <!-- acordeon de estudios  -->
+      <section class="acordeon-estudios seccion-clara">
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseOne"
+                aria-expanded="false"
+                aria-controls="collapseOne"
+              >
+                Desarrollo Web en Coder House
+              </button>
+            </h2>
+            <div
+              id="collapseOne"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <div class="container flex-row">
+                  <div class="row align-items-center">
+                    <div class="col-12 col-md-6">
+                      <p class="seccion-texto">
+                        Este curso intensivo de 10 semanas me permitió adquirir
+                        una base sólida en el desarrollo web moderno. A través
+                        de clases en vivo y desafíos prácticos, aprendí a
+                        construir sitios web desde cero utilizando HTML y CSS,
+                        aplicando principios de diseño responsivo, buenas
+                        prácticas de accesibilidad y optimización básica para
+                        motores de búsqueda (SEO).
+                      </p>
+                      <p class="seccion-texto">
+                        Esta formación fue el punto de partida para seguir
+                        especializándome en tecnologías frontend y backend,
+                        siempre con una visión práctica y enfocada en las
+                        necesidades reales del mundo digital.
+                      </p>
+                    </div>
+                    <div class="col-12 col-md-6">
+                      <a
+                        href="https://www.coderhouse.com/cl/cursos/desarrollo-web-online?pipe_source=google&pipe_medium=cpc&pipe_campaign=0&gad_source=1&gad_campaignid=18826029104&gbraid=0AAAAACn2v4xwH76GeusMrCeB-aiTX141P&gclid=Cj0KCQjwm93DBhD_ARIsADR_DjHsPujOFP3fuEe-GNxa8IVURfYu1vQmotQSHqeAzd98VsROZW5b6h4aAreDEALw_wcB"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <img
+                          class="certificados img-fluid"
+                          src="./assets/images/desarrollo_web.png"
+                          alt="certificación en desarrollo web Elvis Marquez"
+                        />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
+              >
+                JavaScript en Coder House
+              </button>
+            </h2>
+            <div
+              id="collapseTwo"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <div class="container flex-row">
+                  <div class="row align-items-center">
+                    <div class="col-12 col-md-6">
+                      <p class="seccion-texto">
+                        Este curso me permitió dominar los fundamentos de la
+                        programación con JavaScript, el lenguaje que da vida a
+                        la web. Durante la formación, aprendí a manipular el
+                        DOM, trabajar con eventos, desarrollar scripts
+                        interactivos y aplicar buenas prácticas de desarrollo.
+                      </p>
+                      <p class="seccion-texto">
+                        También adquirí nociones clave sobre asincronía
+                        (promesas, async/await) y consumo de APIs, lo cual me
+                        permite crear interfaces dinámicas y conectadas a
+                        servicios externos. Fue un paso esencial para afianzar
+                        mi perfil como desarrollador frontend, con una base
+                        sólida en lógica de programación y experiencia en
+                        proyectos prácticos.
+                      </p>
+                    </div>
+                    <div class="col-12 col-md-6">
+                      <a
+                        href="https://www.coderhouse.com/cl/cursos/javascript?pipe_source=google&pipe_medium=cpc&pipe_campaign=0&gad_source=1&gad_campaignid=18826029104&gbraid=0AAAAACn2v4xwH76GeusMrCeB-aiTX141P&gclid=Cj0KCQjwm93DBhD_ARIsADR_DjHsPujOFP3fuEe-GNxa8IVURfYu1vQmotQSHqeAzd98VsROZW5b6h4aAreDEALw_wcB"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <img
+                          class="certificados img-fluid"
+                          src="./assets/images/Javascript.png"
+                          alt="certificación en JavaScript Elvis Marquez"
+                        />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseThree"
+                aria-expanded="false"
+                aria-controls="collapseThree"
+              >
+                ReactJs en Coder House
+              </button>
+            </h2>
+            <div
+              id="collapseThree"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <div class="container flex-row">
+                  <div class="row align-items-center">
+                    <div class="col-12 col-md-6">
+                      <p class="seccion-texto">
+                        En este curso aprendí a desarrollar aplicaciones
+                        modernas con React, el framework más popular del
+                        ecosistema frontend. Comprendí la lógica basada en
+                        componentes, el uso de props y estados, y cómo gestionar
+                        el ciclo de vida de las interfaces.
+                      </p>
+                      <p class="seccion-texto">
+                        También adquirí experiencia con herramientas como React
+                        Router para crear navegación entre vistas, y Context
+                        para el manejo eficiente del estado global.
+                      </p>
+                      <p class="seccion-texto">
+                        Gracias a una metodología práctica centrada en proyectos
+                        reales, salí preparado para construir aplicaciones
+                        escalables, mantenibles y con una experiencia de usuario
+                        fluida y profesional.
+                      </p>
+                    </div>
+                    <div class="col-12 col-md-6">
+                      <a
+                        href="https://www.coderhouse.com/cl/cursos/reactjs?_st=y"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <img
+                          class="certificados img-fluid"
+                          src="./assets/images/reactjs.png"
+                          alt="certificación en ReactJs Elvis Marquez"
+                        />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseFour"
+                aria-expanded="false"
+                aria-controls="collapseFour"
+              >
+                Backend en Coder House
+              </button>
+            </h2>
+            <div
+              id="collapseFour"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <div class="container flex-row">
+                  <div class="row align-items-center">
+                    <div class="col-12 col-md-6">
+                      <p class="seccion-texto">
+                        Este curso me permitió comprender a fondo la lógica del
+                        lado del servidor, estructurando aplicaciones robustas,
+                        eficientes y seguras. Aprendí a trabajar con Node.js,
+                        Express y bases de datos como MongoDB, implementando
+                        rutas, middlewares, autenticación, y controladores bajo
+                        buenas prácticas de arquitectura.
+                      </p>
+                      <p class="seccion-texto">
+                        Durante el proceso desarrollé proyectos escalables,
+                        utilizando herramientas como Postman para testing, Git
+                        para control de versiones y principios de MVC para
+                        mantener el código limpio y modular. Esta formación
+                        fortaleció mi capacidad de construir APIs sólidas,
+                        integraciones con front-end y soluciones enfocadas en
+                        rendimiento y seguridad.
+                      </p>
+                    </div>
+                    <div class="col-12 col-md-6">
+                      <a
+                        href="https://www.coderhouse.com/cl/cursos/programacion-backend-desarrollo-avanzado-de-backend?_st=y"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <img
+                          class="certificados img-fluid"
+                          src="./assets/images/certificadobackend.png"
+                          alt="certificación en backend Elvis Marquez"
+                        />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
-      <section id="react">
-        <h2>React Js en Coder House</h2>
-        <p>
-          <span class="negrita">Certificación en React JS:</span> Formación en
-          JSX, transpiling y componentes, manejo de promesas, asincronía y .map,
-          consumo de APIs, uso de hooks, children y patrones de componentes,
-          enrutamiento, navegación y eventos, contexto, técnicas de rendering y
-          conexión con Firebase.
-        </p>
-        <a
-          href="https://www.coderhouse.com/cl/cursos/reactjs?_st=y"
-          target="_blank"
-        >
-          <img
-            class="certificados"
-            src="./assets/images/reactjs.png"
-            alt="certificación en reactjs"
-          />
-        </a>
-      </section>
-      <section id="backend">
-        <h2>Backend I,II y III: Desarrollo Avanzado de Backend</h2>
-        <p>
-          <span class="negrita"
-            >Certificación en Desarrollo Backend en Coderhouse:</span
-          >
-          Formación en fundamentos de programación backend, desarrollo con
-          Node.js, gestión de bases de datos SQL y NoSQL, implementación de APIs
-          RESTful, autenticación y autorización, pruebas unitarias y de
-          integración, diseño de arquitecturas escalables, patrones de diseño,
-          optimización de rendimiento, implementación de seguridad en
-          aplicaciones, despliegue en servidores y uso de herramientas de
-          control de versiones.
-        </p>
-        <a
-          href="https://www.coderhouse.com/cl/cursos/programacion-backend-desarrollo-avanzado-de-backend?_st=y"
-          target="_blank"
-        >
-          <img
-            class="certificados"
-            src="./assets/images/certificadobackend.png"
-            alt="certificación en backend"
-          />
-        </a>
+      <!-- cotacto -->
+      <section class="contacto seccion-oscura">
+        <div class="container">
+          <div class="rectangulo">
+            <div class="row align-items-center text-center">
+              <div class="col-12 seccion-titulo">Hablemos!</div>
+              <div class="col-12 descripcion">
+                Contactame y trabajemos en tu app/sitio web. Lleva tus ideas a
+                la realidad.
+              </div>
+              <div class="col-12">
+                <a href="mailto:correo@dementirita.com">
+                  <button type="button">
+                    Contacto <i class="bi bi-envelope-at-fill"></i>
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
     <!-- pie de pagina -->
