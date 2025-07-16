@@ -372,3 +372,9 @@ footer {
     font-size: 15px;
   }
 }
+
+@media screen and (max-width: 740px) {
+  .certificados {
+    margin-left: 0rem;
+  }
+}
