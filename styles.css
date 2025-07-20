@@ -26,6 +26,14 @@
   margin-bottom: 1.5rem;
 }
 
+.seccion-texto a {
+  text-decoration: none;
+}
+
+.seccion-texto a:hover {
+  text-decoration: underline;
+}
+
 .seccion-clara .accordion-body .seccion-texto {
   font-size: 1rem;
   margin-bottom: 1.5rem;
@@ -229,6 +237,44 @@
   gap: 0.5rem;
   justify-content: center;
   margin-top: 1rem;
+}
+
+/* Contrataciones  */
+
+.sobre-mi .contenedor .parrafo-btn {
+  margin-top: 1.5rem;
+}
+
+.contenedor-formulario {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 40px auto;
+}
+
+.contenedor-formulario form {
+  width: 100%;
+  max-width: 600px;
+}
+
+.form-check-label .btn-primary {
+  background-color: white;
+  border: 0;
+  color: black;
+  margin-top: -0.5rem;
+}
+
+.form-check-label .btn-primary:hover {
+  background-color: white;
+  color: black;
+}
+
+input[name="mensaje"] {
+  width: 100%;
+  height: 5rem;
+  font-size: 1rem;
+  padding: 0.5rem;
 }
 
 /* contacto  */

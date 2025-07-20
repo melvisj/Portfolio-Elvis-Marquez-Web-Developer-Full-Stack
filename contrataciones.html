@@ -122,11 +122,12 @@
                   <li>
                     <a class="dropdown-item" href="./sobre-mi.html">Sobre mí</a>
                   </li>
+                  <li>
+                    <a class="dropdown-item" href="contrataciones.html"
+                      >Contrataciones</a
+                    >
+                  </li>
                 </ul>
-                <!-- </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-              </li> -->
               </li>
             </ul>
 
@@ -147,52 +148,131 @@
     </header>
     <!-- formulario de contrataciones  -->
     <main>
-      <section>
-        <h2>¿Sin ideas para tu nuevo proyecto?</h2>
-        <p>Échale un ojo a mis proyectos.</p>
-        <iframe
-          class="ventana-proyectos"
-          src="./proyectos.html#restaurante"
-          title="Proyectos realizados por Elvis Márquez"
-          loading="lazy"
-        ></iframe>
-        <h3>Formulario de contrataciones</h3>
-        <form
-          action="#"
-          method="post"
-          onsubmit="alert('¡Hola! Te contacto enseguida. Tardo aproximadamente 3 horas en responder. ¡Saludos!'); return false;"
-        >
-          <label for="name">Nombre</label>
-          <input
-            type="text"
-            id="name"
-            name="name"
-            maxlength="50"
-            required
-          /><br />
-          <label for="email">Correo</label>
-          <input type="email" id="email" name="email" required /><br />
-          <label for="phone">Whatsapp</label>
-          <input
-            type="text"
-            id="phone"
-            name="phone"
-            pattern="\d*"
-            inputmode="numeric"
-            required
-          /><br />
-          <label for="negocio">Negocio/Rubro</label>
-          <input type="text" id="negocio" name="negocio" maxlength="50" /><br />
-          <label for="budget">Presupuesto en USD</label>
-          <input type="text" id="budget" name="budget" maxlength="50" /><br />
-          <label for="message">Mensaje</label>
-          <textarea
-            name="message"
-            id="message"
-            maxlength="3000"
-            placeholder="Por favor describe tu idea o proyecto lo mejor posible, así en el correo de respuesta podre darte una respuesta concluyente"
-          ></textarea>
-          <button type="submit">Enviar</button>
+      <section class="sobre-mi seccion-oscura align-items-strech">
+        <div class="contenedor d-flex flex-column">
+          <h2 class="seccion-titulo">Aqui comienza tu proyecto</h2>
+          <p class="seccion-texto">¿Sin ídeas para tu proyecto?</p>
+          <div class="boton">
+            <a href="./proyectos.html"
+              ><button type="button" class="btn btn-info">
+                Inspirate Aqui
+                <i class="bi bi-arrow-right-circle-fill"></i></button
+            ></a>
+          </div>
+          <p class="seccion-texto parrafo-btn">
+            Ya sea que necesites una tienda online, una web profesional, o una
+            solución a medida, estoy listo para poner mi creatividad y
+            experiencia a tu servicio.
+          </p>
+
+          <p class="seccion-texto">
+            <span class="negrita">¿Empezamos?</span> Revisa mis
+            <a href="./proyectos.html">proyectos</a>,
+            <a href="mailto:correo@dementirita.com">contáctame</a> o solicita
+            una <a href="./contrataciones.html">propuesta a medida</a>?
+          </p>
+        </div>
+      </section>
+      <!-- formulario -->
+      <section class="contenedor-formulario seccion-clara align-items-strech">
+        <form class="row g-3">
+          <div class="col-md-6">
+            <label for="name" class="form-label">Nombre o Razon Social</label>
+            <input type="text" class="form-control" id="name" required />
+          </div>
+          <div class="col-md-6">
+            <label for="motivo" class="form-label">Motivo de contacto</label>
+            <select id="motivo" class="form-select">
+              <option selected>Elegir</option>
+              <option>Proyecto Personal</option>
+              <option>Oferta Laboral</option>
+              <option>Conrato por Proyecto</option>
+              <option>Otro motivo</option>
+            </select>
+          </div>
+          <div class="col-12">
+            <label for="cotacto" class="form-label"
+              >Whatsapp / Red Social / Email</label
+            >
+            <input
+              type="text"
+              class="form-control"
+              id="contacto"
+              placeholder="micorreo@personal.com"
+              required
+            />
+          </div>
+          <div class="col-12">
+            <label for="Comentarios" class="form-label">Comentarios</label>
+            <input
+              type="text"
+              class="form-control"
+              id="Comentarios"
+              name="mensaje"
+              maxlength="1000"
+            />
+          </div>
+          <div class="col-md-6">
+            <label for="inputCity" class="form-label">País o Region</label>
+            <input type="text" class="form-control" id="inputCity" />
+          </div>
+          <div class="col-md-6">
+            <label for="inputState" class="form-label">Importancia</label>
+            <select id="inputState" class="form-select">
+              <option selected>Respuesta en...</option>
+              <option>12 h</option>
+              <option>24 h</option>
+              <option>48 h</option>
+              <option>72 h</option>
+            </select>
+          </div>
+          <div class="col-12">
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="gridCheck"
+                required
+              />
+              <label class="form-check-label" for="gridCheck">
+                <button
+                  class="btn btn-primary"
+                  type="button"
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#offcanvasBottom"
+                  aria-controls="offcanvasBottom"
+                >
+                  Acepta condiciones de servicio
+                </button>
+
+                <div
+                  class="offcanvas offcanvas-bottom"
+                  tabindex="-1"
+                  id="offcanvasBottom"
+                  aria-labelledby="offcanvasBottomLabel"
+                >
+                  <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasBottomLabel">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Incidunt culpa odio architecto quo similique enim, cum
+                      quam facere at voluptas corrupti illum minima nisi
+                      deleniti recusandae officiis. Magni, facere rerum.
+                    </h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="offcanvas"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="offcanvas-body small">...</div>
+                </div>
+              </label>
+            </div>
+          </div>
+          <div class="col-12">
+            <button type="submit" class="btn btn-info">Enviar Solicitud</button>
+          </div>
         </form>
       </section>
     </main>
