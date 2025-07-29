@@ -277,6 +277,11 @@ input[name="mensaje"] {
   padding: 0.5rem;
 }
 
+.offcanvas-header {
+  overflow-y: auto; /* Habilita scroll vertical cuando sea necesario */
+  overflow-x: hidden; /* Evita scroll horizontal */
+}
+
 /* contacto  */
 
 .contacto .container {
