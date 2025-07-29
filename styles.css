@@ -231,6 +231,10 @@
   border-radius: 50%;
 }
 
+.experiencia i:hover {
+  background-color: white;
+}
+
 .badges {
   display: flex;
   flex-wrap: wrap;
