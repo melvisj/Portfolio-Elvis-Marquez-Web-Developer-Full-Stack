@@ -1,0 +1,13 @@
+@use 'variables';
+
+header {
+  background-color: variables.$color-primario;
+  color: white;
+  padding: 20px;
+
+  h1 {
+    font-family: variables.$fuente-principal;
+    font-size: 2.5rem;
+    margin: 0;
+  }
+}
