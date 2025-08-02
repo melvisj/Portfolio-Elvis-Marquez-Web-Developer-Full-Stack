@@ -1,0 +1,11 @@
+// scss/_acordeon.scss
+
+@use 'variables' as *;
+
+.accordion-body {
+  p {
+    font-family: $fuente-acordeon;
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+}
