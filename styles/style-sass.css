@@ -7,7 +7,8 @@ header nav form .btn {
   transition: background-color 0.3s ease;
 }
 header nav form .btn:hover {
-  background-color: #0000be;
+  background-color: rgb(44.8831168831, 44.8831168831, 83.1168831169);
+  color: white;
 }
 
 .accordion-body p {

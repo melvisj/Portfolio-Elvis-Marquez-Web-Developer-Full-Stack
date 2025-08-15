@@ -14,7 +14,8 @@ header {
         transition: background-color 0.3s ease;
 
         &:hover {
-          background-color: lighten(darkblue, 10%);
+          background-color: lighten(#1b1b32, 10%);
+          color: white;
         }
       }
     }
